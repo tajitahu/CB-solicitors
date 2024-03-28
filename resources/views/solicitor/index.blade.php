@@ -13,7 +13,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team4.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team4.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
@@ -37,7 +37,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team1.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team1.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
@@ -61,7 +61,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team2.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team2.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
@@ -85,7 +85,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team3.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team3.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
@@ -109,7 +109,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team5.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team5.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
@@ -137,7 +137,7 @@
         <div class="teamContent teamCol">
           <div class="row">
             <div class="col-xs-6">
-              <img src="img/home/team8.jpg" alt="Image" class="img-responsive">
+              <img src="{{ asset('user/img/home/team8.jpg') }}" alt="Image" class="img-responsive">
             </div>
             <div class="col-xs-6">
               <div class="teamInfo">
