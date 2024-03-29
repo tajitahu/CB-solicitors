@@ -9,18 +9,21 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $practiceAreas = PracticeAreas::get();
+        return view('welcome', compact('practiceAreas'));
 
     }
     public function practice()
     {
-        return view('practice-all');
+        $practiceAreas = PracticeAreas::get();
+        return view('practice-all', compact('practiceAreas'));
     }
 
     public function practice_detail($area)
     {
+        $practiceAreas = PracticeAreas::get();
         $area = PracticeAreas::where('name',$area)->pluck('name')->first();
-        return view('practice-detail', compact('area'));
+        return view('practice-detail', compact('area', 'practiceAreas'));
     }
    
 }

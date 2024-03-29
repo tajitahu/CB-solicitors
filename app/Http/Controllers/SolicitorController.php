@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\PracticeAreas;
 
 class SolicitorController extends Controller
 {
     public function index()
     {
-        return view('solicitor.index');
+        $practiceAreas = PracticeAreas::get();
+        return view('solicitor.index', compact('practiceAreas'));
 
     }
 }

@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use App\Models\PracticeAreas;
+//use App\Models\PracticeAreas;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $practiceAreas = PracticeAreas::get();
-        View::share('practiceAreas', $practiceAreas);
+        //$practiceAreas = PracticeAreas::get();
+        //View::share('practiceAreas', $practiceAreas);
     }
 }
