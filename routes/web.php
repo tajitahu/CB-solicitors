@@ -15,3 +15,4 @@ Route::get('/practice-areas/{area}', [HomeController::class, 'practice_detail'])
 
 // Solicitor
 Route::get('/solicitors', [SolicitorController::class, 'index'])->name('solicitors');
+Route::get('/find-solicitor', [SolicitorController::class, 'find'])->name('find-solicitor');

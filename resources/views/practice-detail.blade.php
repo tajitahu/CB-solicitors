@@ -1,5 +1,7 @@
 @extends('navigation.master')
 
+@section('areas','active')
+
 @section('content')
 
 
@@ -13,36 +15,22 @@
           <div class="sidebar">
 
             <div class="block">
-              <h3>Search</h3>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit" class="input-group-addon btn btn-default"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+
+            <div class="block">
+              <h3>Practice Areas</h3>
               <div class="block-inner">
                 <ul class="list-unstyled sideNav">
-                  <li>
-                    <form action="#" method="POST" role="form">
-                      <div class="form-group">
-                          <input type="text" class="form-control" name="title" placeholder="Title">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="form-control" name="location" placeholder="Location">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="form-control" name="specialty" placeholder="Specialty">
-                      </div>
-                      <div class="form-group">
-                          <input type="number" class="form-control" name="fee" placeholder="Fee">
-                      </div>
-                      <div class="form-group">
-                          <input type="number" class="form-control" name="rating" placeholder="Rating">
-                      </div>
-                  </form>
-                  </li>
-               
+                  @foreach ($practiceAreas->shuffle()->take(7) as $data)
+                  <li><a href="{{route('areas_detail',$data->name)}}">{{ ucwords($data->name) }}</a></li>
+                  @endforeach
                 </ul>
               </div>
             </div>
-            <div class="block">
-              <a href="#" class="btn btn-common btn-full-round btn-theme">Apply Filter</a>
-            </div>
-
           </div>
         </div>
 

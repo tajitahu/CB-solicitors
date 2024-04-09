@@ -34,34 +34,34 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active">
+              <li class="@yield('home')">
                 <a href="/">Home</a>
               </li>
              
               {{-- Practice Areas --}}
-              <li class=" dropdown singleDrop">
+              <li class="@yield('areas') dropdown singleDrop">
                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Practice Areas</a>
                 <ul class="dropdown-menu dropdown-menu-right">
                   
-                  @foreach ($practiceAreas->take(10) as $data)
-                    <li><a href="#">{{ ucwords($data->name) }}</a></li>
+                  @foreach ($practiceAreas->shuffle()->take(10) as $data)
+                    <li><a href="{{route('areas_detail',$data->name)}}">{{ ucwords($data->name) }}</a></li>
                   @endforeach
-                  <li><a href="{{route('areas')}}">View All</a></li>
+                  <li class="@yield('areas')"><a href="{{route('areas')}}">View All</a></li>
                 </ul>
               </li>
 
               {{-- Solicitors --}}
-              <li class="">
+              <li class="@yield('solicitors')">
                 <a href="{{ route('solicitors')}}">Solicitors</a>
               </li>
             
               {{-- Published Cases --}}
-              <li class="">
+              <li class="@yield('cases')">
                 <a href="#">Published Cases</a>
               </li>
 
               {{-- Login --}}
-              <li class="">
+              <li class="@yield('login')">
                 <a href="#">Login</a>
               </li>
 

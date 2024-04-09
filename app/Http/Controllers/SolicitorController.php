@@ -13,4 +13,11 @@ class SolicitorController extends Controller
         return view('solicitor.index', compact('practiceAreas'));
 
     }
+
+    public function find()
+    {
+        $practiceAreas = PracticeAreas::get();
+        return view('solicitor.find', compact('practiceAreas'));
+
+    }
 }
