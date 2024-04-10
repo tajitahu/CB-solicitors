@@ -18,12 +18,12 @@
                   <div class="teamImage">
                     <img src="{{ asset('user/img/home/team3.jpg') }}" alt="Image" class="img-responsive">
                     <div class="overlay">
-                      <a href="attorney-profile.html"></a>
+                      <a href="{{route('view-solicitor')}}"></a>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="attorney-profile.html">Mark Brown</a></h3>
-                    <p>Lawyer &amp; ceo</p>
+                    <h3><a href="{{route('view-solicitor')}}">Mark Brown</a></h3>
+                    <p>Solicitor </p>
                     <ul class="list-inline">
                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -40,11 +40,11 @@
                   <div class="teamImage">
                     <img src="{{ asset('user/img/home/team2.jpg') }}" alt="Image" class="img-responsive">
                     <div class="overlay">
-                      <a href="attorney-profile.html"></a>
+                      <a href="{{route('view-solicitor')}}"></a>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="attorney-profile.html">Amanda Stone</a></h3>
+                    <h3><a href="{{route('view-solicitor')}}">Amanda Stone</a></h3>
                     <p>Lawyer &amp; ceo</p>
                     <ul class="list-inline">
                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -62,11 +62,11 @@
                   <div class="teamImage">
                     <img src="{{ asset('user/img/home/team4.jpg') }}" alt="Image" class="img-responsive">
                     <div class="overlay">
-                      <a href="attorney-profile.html"></a>
+                      <a href="{{route('view-solicitor')}}"></a>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="attorney-profile.html">Mark Brown</a></h3>
+                    <h3><a href="{{route('view-solicitor')}}">Mark Brown</a></h3>
                     <p>Lawyer &amp; ceo</p>
                     <ul class="list-inline">
                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -84,11 +84,11 @@
                   <div class="teamImage">
                     <img src="{{ asset('user/img/home/team1.jpg') }}" alt="Image" class="img-responsive">
                     <div class="overlay">
-                      <a href="attorney-profile.html"></a>
+                      <a href="{{route('view-solicitor')}}"></a>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="attorney-profile.html">Amanda Stone</a></h3>
+                    <h3><a href="{{route('view-solicitor')}}">Amanda Stone</a></h3>
                     <p>Lawyer &amp; ceo</p>
                     <ul class="list-inline">
                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
