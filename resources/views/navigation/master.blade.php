@@ -32,6 +32,7 @@
   <link href="{{ asset('user/css/style.css') }}" rel="stylesheet">
   <link href="#" rel="stylesheet" id="rtl_css">
   <link href="{{ asset('user/css/default.css') }}" rel="stylesheet" id="option_color">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
   <!-- FAVICON -->
   <link href="{{ asset('user/img/cambiz.jpg') }}" rel="shortcut icon">
@@ -164,12 +165,18 @@
     <script src="{{ asset('user/plugins/smoothscroll/SmoothScroll.min.js') }}"></script>
     <script src="{{ asset('user/plugins/google-custom-map/google-map.js') }}"></script>
     <script src="{{ asset('user/js/custom.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script>
     	// Wait for window load
     	// $(window).load(function() {
     	// 	// Animate loader off screen
     	// 	$(".se-pre-con").fadeOut("slow");;
     	// });
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+
     </script>
 
   {{-- <link href="{{ asset('user/options/optionswitch.css') }}" rel="stylesheet">

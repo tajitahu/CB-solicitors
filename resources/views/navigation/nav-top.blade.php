@@ -62,53 +62,12 @@
 
               {{-- Login --}}
               <li class="@yield('login')">
-                <a href="#">Login</a>
+                <a href="{{route('login')}}">Login</a>
               </li>
 
             </ul>
-          </div>
-
-          {{-- <div class="searchBox">
-            <a href="#"><i class="fa fa-search"></i></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li>
-                <form class="navbar-form">
-                  <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  <div class="form-group"> <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                </form>
-              </li>
-            </ul>
-          </div> --}}
-
-          {{-- <div class="searchBox">
-            <a href="#"><i class="fa fa-search"></i></a>
-            <ul class="dropdown-menu dropdown-menu-right">
-                <li>
-                    <form class="navbar-form" action="/search" method="GET">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="title" placeholder="Title">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="location" placeholder="Location">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="specialty" placeholder="Specialty">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" name="fee" placeholder="Fee">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" name="rating" placeholder="Rating">
-                        </div>
-                        <div class="form-group"> <input type="text" class="form-control" placeholder="Search">
-                    </form>
-                </li>
-            </ul>
-        </div> --}}
+          </div>     
         
-        
-
         </div>
       </nav>
     </div>
