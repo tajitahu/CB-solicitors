@@ -1,2 +1,2 @@
 
-## CAMBIZ Solicitor
+## CAMBIZs Solicitor
